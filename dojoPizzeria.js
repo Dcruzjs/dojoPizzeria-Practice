@@ -1,7 +1,28 @@
-const crustType = ["deep dish", "hand tossed"];
-const sauceType = ["traditional", "marinara"];
-const chesses = ["mozarella", "feta"];
-const toppings = ["pepperoni", "sausage", "mushrooms", "olives", "onions"];
+const crustType = [
+  "deep dish",
+  "hand tossed",
+  "Cheese-Stuffed",
+  "Flatbread",
+  "Thin Crust",
+  "Neapolitan",
+];
+const sauceType = [
+  "traditional",
+  "marinara",
+  "Spicy Red Sauce",
+  "Sweet Sauce",
+  "BBQ Sauce",
+  "Pesto Sauce",
+];
+const chesses = ["mozarella", "feta", "Cheddar", "Gouda", "Swiss", "Parmesan"];
+const toppings = [
+  "pepperoni",
+  "sausage",
+  "mushrooms",
+  "olives",
+  "onions",
+  "Ham",
+];
 
 function pizzaOven(crustType, sauceType, chesses, toppings) {
   return {
@@ -37,8 +58,22 @@ let pizza2 = pizzaOven(
   ["mushrooms", "olives", "onions"]
 );
 
+let pizza3 = pizzaOven("Neapolitan", "sweet sauce", "swiss", [
+  "pepperoni",
+  "olives",
+  "mushrooms",
+]);
+
+let pizza4 = pizzaOven("deep dish", "sweet sauce", "cheddar", [
+  "onions",
+  "sausage",
+  "ham",
+]);
+
 let luckyPizza = randomPizza();
 
-console.log(pizza1);
-console.log(pizza2);
-console.log(luckyPizza);
+console.log(`You ordered: `, pizza1);
+console.log(`You ordered: `, pizza2);
+console.log(`You ordered: `, pizza3);
+console.log(`You ordered: `, pizza4);
+console.log(`Your lucky pizza is: `, luckyPizza);
