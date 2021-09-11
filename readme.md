@@ -4,5 +4,3 @@ In this Practice we worked with:
 - Arrays
 - Functions
 - Math.random() to generate a pizza with random ingredients.
-
-[LIVE DEMO]( "LIVE DEMO")
